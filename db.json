@@ -1,0 +1,14 @@
+{
+  "bears": [
+    {
+      "id": "608de49f-c13b-4012-a581-2488ba651895",
+      "size": "small",
+      "isAwake": false
+    },
+    {
+      "id": "32271c8f-f40a-41c6-b83e-754bb5d5d6da",
+      "size": "medium",
+      "isAwake": false
+    }
+  ]
+}
