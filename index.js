@@ -25,36 +25,36 @@ server.get('/bears', function(request, response){
   response.send(bears);
 });
 
-// server.get('/bears/:id', function(request, response){
-//   // response.send('GET bears :id');
-//   //
-//   // console.log(request.params);
-//
-//   var bear = db.get('bears')
-//                  .find({id: request.params.id})
-//                  .value();
-//   response.send(bear);
-// });
+server.get('/bears/:id', function(request, response){
+  // response.send('GET bears :id');
+  //
+  // console.log(request.params);
 
-// server.get('/bears/:size', function(request, response){
-//   // response.send('GET bears :size');
-//
-//   var bear = db.get('bears')
-//                  .find({size: request.params.size})
-//                  .value();
-//   response.send(bear);
-//
-// });
+  var bear = db.get('bears')
+                 .find({id: request.params.id})
+                 .value();
+  response.send(bear);
+});
 
-// server.get('/bears/:color', function(request, response){
-//   // response.send('GET bears :color');
-//
-//   var bear = db.get('bears')
-//                  .find({color: request.params.color})
-//                  .value();
-//   response.send(bear);
-//
-// });
+server.get('/bears/:size', function(request, response){
+  // response.send('GET bears :size');
+
+  var bear = db.get('bears')
+                 .find({size: request.params.size})
+                 .value();
+  response.send(bear);
+
+});
+
+server.get('/bears/:color', function(request, response){
+  // response.send('GET bears :color');
+
+  var bear = db.get('bears')
+                 .find({color: request.params.color})
+                 .value();
+  response.send(bear);
+
+});
 
 server.get('/bears/:awake', function(request, response){
   // response.send('GET bears :awake');
