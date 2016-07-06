@@ -9,6 +9,33 @@
       "id": "32271c8f-f40a-41c6-b83e-754bb5d5d6da",
       "size": "medium",
       "isAwake": false
+    },
+    {
+      "id": "cb379e3d-cafd-4c35-8524-e9a62de109e9",
+      "size": "large",
+      "color": "black",
+      "isAwake": false,
+      "hasKids": false,
+      "isHungry": false,
+      "gender": "male"
+    },
+    {
+      "id": "94d83466-c0f8-4d03-b372-67a1bf929bdc",
+      "size": "small",
+      "color": "white",
+      "isAwake": false,
+      "hasKids": false,
+      "isHungry": false,
+      "gender": "female"
+    },
+    {
+      "id": "0b46d04a-42c3-4e71-afb8-d8bc536755e5",
+      "size": "small",
+      "color": "brown",
+      "isAwake": false,
+      "hasKids": false,
+      "isHungry": false,
+      "gender": "male"
     }
   ]
 }
