@@ -76,7 +76,7 @@
     },
     {
       "id": "603bddab-cb2c-4cbd-ae34-cc4b48d6a5bc",
-      "isAwake": false,
+      "isAwake": true,
       "hasKids": false,
       "isHungry": true
     }

@@ -12,9 +12,9 @@ function Bear(size, color, id){
   this.isHungry = false;
 
   //Strings
-  // this.type = type ||
-  // this.notes = notes ||
-  // this.gender = gender ||
+  this.type = type || ""
+  this.notes = notes || ""
+  this.gender = gender || ""
 
 }
 
