@@ -137,7 +137,7 @@ server.post('/bears', function(request, response){
   // };
 
   //New code
-  var bear = new Bear(request.body.size,request.body.color);
+  var bear = new Bear(request.body.size,request.body.color,request.body.isAwake, request.body.hasKids, request.body.isHungry);
 
   var result = db.get('bears')
                  .push(bear)

@@ -1,15 +1,15 @@
 var uuid = require('uuid'); //used to generate random number
 
-function Bear(size, color, id){
+function Bear(size, color, isAwake, hasKids, isHungry, id){
   //Must Haves
   this.id = id || uuid.v4();
   this.size = size;
   this.color = color;
 
   //Booleans
-  this.isAwake = false;
-  this.hasKids = false;
-  this.isHungry = false;
+  this.isAwake = isAwake || false;
+  this.hasKids = hasKids || false;
+  this.isHungry = isHungry || false;
 
   //Strings
   // this.type = type || ""
