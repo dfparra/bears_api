@@ -151,20 +151,26 @@ server.post('/bears', function(request, response){
 server.put('/bears/:id', function(request, response){
   // response.send('PUT bears :id');
 
-  var updatedBearInfo = {
-    size: request.body.size,
-    color: request.body.color,
-    isAwake: request.body.isAwake,
-    hasKids: request.body.haskids,
-    type: request.body.type,
-    isHungry: request.body.isHungry,
-    notes: request.body.notes,
-    gender: request.body.gender
-  };
+  // var updatedBearInfo = {
+  //   size: request.body.size,
+  //   color: request.body.color,
+  //   isAwake: request.body.isAwake,
+  //   hasKids: request.body.haskids,
+  //   type: request.body.type,
+  //   isHungry: request.body.isHungry,
+  //   notes: request.body.notes,
+  //   gender: request.body.gender
+  // };
+
+  //New code
+  var bear = new Bear(request.body.size,request.body.color,request.params.id);
+  bear.updateAwake(request.body.isAwake);
+  bear.updateKids(request.body.hasKids);
+  bear.updateHungry(request.body.isHungry);
 
   var updatedBear = db.get('bears')
                       .find({id: request.params.id})
-                      .assign(updatedBearInfo)
+                      .assign(bear)
                       .value();
   response.send(updatedBear);
 

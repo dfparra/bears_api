@@ -1,6 +1,6 @@
 var uuid = require('uuid'); //used to generate random number
 
-function Bear(size, color,id){
+function Bear(size, color, id){
   //Must Haves
   this.id = id || uuid.v4();
   this.size = size;
@@ -12,34 +12,36 @@ function Bear(size, color,id){
   this.isHungry = false;
 
   //Strings
-
+  // this.type = type ||
+  // this.notes = notes ||
+  // this.gender = gender ||
 
 }
 
 //Update boolean values
 Bear.prototype.updateAwake = function(value){
   if(value.toLowerCase() === 'true'){
-    this.isComplete = true;
+    this.isAwake = true;
   } else{
-    this.isComplete = false;
+    this.isAwake = false;
   }
 
 };
 
-Bear.prototype.updateAwake = function(value){
+Bear.prototype.updateKids = function(value){
   if(value.toLowerCase() === 'true'){
-    this.isComplete = true;
+    this.hasKids = true;
   } else{
-    this.isComplete = false;
+    this.hasKids = false;
   }
 
 };
 
-Bear.prototype.updateAwake = function(value){
+Bear.prototype.updateHungry = function(value){
   if(value.toLowerCase() === 'true'){
-    this.isComplete = true;
+    this.isHungry = true;
   } else{
-    this.isComplete = false;
+    this.isHungry = false;
   }
 
 };
