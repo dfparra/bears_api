@@ -5,6 +5,9 @@ var lowdb = require('lowdb');
 var uuid = require('uuid');
 var server = express();
 
+//import my models folder
+var Todo = require('./models/bear.js');
+
 var port = process.env.PORT || 8080;
 var db = lowdb('db.json');
 
@@ -120,18 +123,21 @@ server.get('/bears/:gender', function(request, response){
 
 server.post('/bears', function(request, response){
   // response.send('POST bear');
-  var bear = {
-    id: uuid.v4(),
-    size: request.body.size,
-    color: request.body.color,
-    isAwake: false,//request.body.isAwake,
-    hasKids: false,//request.body.hasKids,
-    type: request.body.type,
-    isHungry: false,//request.body.isHungry,
-    notes: request.body.notes,
-    gender: request.body.gender,
+  // var bear = {
+  //   id: uuid.v4(),
+  //   size: request.body.size,
+  //   color: request.body.color,
+  //   isAwake: false,//request.body.isAwake,
+  //   hasKids: false,//request.body.hasKids,
+  //   type: request.body.type,
+  //   isHungry: false,//request.body.isHungry,
+  //   notes: request.body.notes,
+  //   gender: request.body.gender,
+  //
+  // };
 
-  };
+  //New code
+  var bear = new Bear(request.body.size,request.body.color);
 
   var result = db.get('bears')
                  .push(bear)
