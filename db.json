@@ -73,6 +73,14 @@
       "hasKids": false,
       "isHungry": false,
       "gender": "female"
+    },
+    {
+      "id": "603bddab-cb2c-4cbd-ae34-cc4b48d6a5bc",
+      "size": "large",
+      "color": "blue",
+      "isAwake": false,
+      "hasKids": false,
+      "isHungry": false
     }
   ]
 }

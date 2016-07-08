@@ -6,7 +6,7 @@ var uuid = require('uuid');
 var server = express();
 
 //import my models folder
-var Todo = require('./models/bear.js');
+var Bear = require('./models/bear.js');
 
 var port = process.env.PORT || 8080;
 var db = lowdb('db.json');
