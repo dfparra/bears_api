@@ -3,10 +3,11 @@
     {
       "id": "608de49f-c13b-4012-a581-2488ba651895",
       "size": "small",
-      "isAwake": "true",
-      "color": "purple",
+      "isAwake": false,
       "notes": "bear cub",
-      "gender": "female"
+      "gender": "female",
+      "hasKids": false,
+      "isHungry": false
     },
     {
       "id": "cb379e3d-cafd-4c35-8524-e9a62de109e9",
@@ -79,6 +80,26 @@
       "isAwake": true,
       "hasKids": false,
       "isHungry": true
+    },
+    {
+      "id": "9cd166b5-931e-4b05-b9e6-6a9af68cb99e",
+      "isAwake": true,
+      "hasKids": false,
+      "isHungry": false
+    },
+    {
+      "id": "158fcfc5-84a1-4d47-aabc-76d492c1e795",
+      "size": "small",
+      "isAwake": false,
+      "hasKids": false,
+      "isHungry": false
+    },
+    {
+      "id": "f7a8fec6-ca91-47fb-ab49-b24dec68dba6",
+      "color": "blue",
+      "isAwake": false,
+      "hasKids": false,
+      "isHungry": false
     }
   ]
 }
