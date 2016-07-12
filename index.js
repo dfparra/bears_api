@@ -4,6 +4,8 @@ var bodyParser = require('body-parser');
 var lowdb = require('lowdb');
 var uuid = require('uuid');
 var server = express();
+var cors = require('cors');
+
 
 //import my models folder
 var Bear = require('./models/bear.js');
@@ -17,6 +19,7 @@ db.defaults({bears: []})
 
 server.use(bodyParser.json());
 server.use(bodyParser.urlencoded({extended: true}));
+server.use(cors());
 
 //GET ROUTES
 
