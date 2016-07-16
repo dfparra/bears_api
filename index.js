@@ -166,7 +166,7 @@ server.put('/bears/:id', function(request, response){
   // };
 
   //New code
-  var bear = new Bear(request.body.size,request.body.color,request.params.id);
+  var bear = new Bear(request.body.size,request.body.color,request.body.isAwake,request.body.hasKids,request.body.isHungry,request.params.id);
   bear.updateAwake(request.body.isAwake);
   bear.updateKids(request.body.hasKids);
   bear.updateHungry(request.body.isHungry);
